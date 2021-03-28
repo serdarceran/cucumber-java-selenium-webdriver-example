@@ -1,7 +1,6 @@
 package com.automatedtest.sample.homepage;
 
 import com.automatedtest.sample.basepage.BasePage;
-import org.junit.Assert;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -12,7 +11,7 @@ public class HomePage extends BasePage{
 
     private static final String HOME_PAGE_URL = "https://www.google.";
 
-    @FindBy(css = "#hplogo")
+    @FindBy(css = "img[alt='Google']")
     private WebElement logo;
 
     @FindBy(css = "input[name=q]")
