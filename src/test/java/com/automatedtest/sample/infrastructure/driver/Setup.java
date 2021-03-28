@@ -22,7 +22,7 @@ public class Setup {
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("['start-maximized']");
                 chromeOptions.addArguments("--disable-dev-shm-usage");
-                chromeOptions.addArguments("--remote-debugging-port=9222");
+//                chromeOptions.addArguments("--remote-debugging-port=9222");
                 chromeOptions.setHeadless(true);
                 System.setProperty("webdriver.chrome.driver", "./src/test/resources/drivers/chromedriver");
                 driver = new ChromeDriver(chromeOptions);
