@@ -22,6 +22,7 @@ public class Setup {
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("['start-maximized']");
                 chromeOptions.addArguments("--disable-dev-shm-usage");
+                chromeOptions.addArguments("--headless", "window-size=1024,768", "--no-sandbox");
 //                chromeOptions.addArguments("--remote-debugging-port=9222");
                 chromeOptions.setHeadless(true);
                 System.setProperty("webdriver.chrome.driver", "./src/test/resources/drivers/chromedriver");
