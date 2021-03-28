@@ -21,6 +21,7 @@ public class Setup {
             case "chrome":
                 ChromeOptions chromeOptions = new ChromeOptions();
                 chromeOptions.addArguments("['start-maximized']");
+                chromeOptions.addArguments("--disable-dev-shm-usage");
                 chromeOptions.setHeadless(true);
                 System.setProperty("webdriver.chrome.driver", "./src/test/resources/drivers/chromedriver");
                 driver = new ChromeDriver(chromeOptions);
